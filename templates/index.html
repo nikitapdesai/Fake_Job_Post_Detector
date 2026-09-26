@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Job Detector</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        textarea {
+            width: 60%;
+            padding: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AI Fake Job Posting Detector</h1>
+
+    <form method="POST">
+        <textarea name="jobtext" rows="10" placeholder="Paste job description here..."></textarea><br><br>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            <h2>{{ prediction }}</h2>
+            <h3>Fraud Probability: {{ probability }}</h3>
+        </div>
+    {% endif %}
+
+</body>
+</html>
