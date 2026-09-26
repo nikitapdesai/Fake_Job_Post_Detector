@@ -28,13 +28,7 @@ An NLP-based machine learning system for detecting fraudulent job postings.
 
 
 
-The system applies text preprocessing and TF-IDF feature extraction to
-
-convert job descriptions into numerical feature vectors. A Logistic
-
-Regression classifier is then trained to classify job postings as
-
-legitimate or fraudulent.
+The system applies text preprocessing and TF-IDF feature extraction to convert job descriptions into numerical feature vectors. A Logistic Regression classifier is then trained to classify job postings as legitimate or fraudulent.
 
 
 
